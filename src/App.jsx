@@ -9,6 +9,17 @@ import QuestionForm from "./Components/QuestionForm/QuestionForm";
 // import { data } from "./assets/data";
 
 const App = () => {
+  useEffect(() => {
+    const handleContextMenu = (e) => {
+      e.preventDefault();
+    };
+
+    document.addEventListener("contextmenu", handleContextMenu);
+
+    return () => {
+      document.removeEventListener("contextmenu", handleContextMenu);
+    };
+  }, []);
 
   const host = "http://localhost:8080/";
   const getAll = "Question/GetQues";
