@@ -19,17 +19,17 @@ const Head = () => {
   const quizSet = [
     {
       difficulty: "Easy",
-      desc: "Time : 10 sec",
+      desc: "Time : 20 sec each",
       questions: 12,
     },
     {
       difficulty: "Medium",
-      desc: "Time : 10 sec",
+      desc: "Time : 20 sec each",
       questions: 10,
     },
     {
       difficulty: "Hard",
-      desc: "Time : 10 sec",
+      desc: "Time : 20 sec each",
       questions: 5,
     },
   ];

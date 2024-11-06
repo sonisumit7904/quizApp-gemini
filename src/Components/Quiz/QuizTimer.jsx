@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./QuizTimer.css";
 
-const QuizTimer = ({ duration = 10, handleTimeOut }) => {
+const QuizTimer = ({ duration = 20, handleTimeOut }) => {
   const [seconds, setTimeLeft] = useState(duration);
 
   useEffect(() => {

@@ -124,7 +124,7 @@ const Quiz = () => {
   // Use useMemo to only recreate the timer when the index changes
   const memoizedQuizTimer = useMemo(() => {
     return (
-      <QuizTimer key={index} duration={10} handleTimeOut={handleTimeOut} />
+      <QuizTimer key={index} duration={20} handleTimeOut={handleTimeOut} />
     );
   }, [index]);
 
