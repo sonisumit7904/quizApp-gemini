@@ -42,9 +42,9 @@ const Quiz = () => {
         setScore((prev) => prev + 1);
       } else {
         e.target.classList.add("wrong");
-        const correctOption = option_array[Number(question.correctAnswer) - 1];
-        if (correctOption?.current) {
-          correctOption.current.classList.add("correct");
+        const correctOptionIndex = Number(question.correctAnswer) - 1;
+        if (option_array[correctOptionIndex]?.current) {
+          option_array[correctOptionIndex].current.classList.add("correct");
         }
       }
       setLock(true);
@@ -99,10 +99,10 @@ const Quiz = () => {
       // Get the selected difficulty and topic
 
       // Step 1: Create the quiz with POST request using axios
-      const id = local.id;
+      // const id = local.id;
 
-      // Step 2: Get the quiz questions using the ID
-      const deleteQuizResponse = await axiosInstance.delete(`/Finish/${id}`);
+      // // Step 2: Get the quiz questions using the ID
+      // const deleteQuizResponse = await axiosInstance.delete(`/Finish/${id}`);
 
       localStorage.removeItem("currentQuiz");
 
