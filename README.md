@@ -15,9 +15,8 @@ This is a modern, interactive Quiz Application built using the MERN stack (Mongo
 
 ## Tech Stack
 
+- AI Questions Generation: Google Gemini API
 - Frontend: React.js with Vite
-- Backend: Java with SpringBoot
-- Database: PostgreSQL
 - Styling: CSS with responsive design
 - Charts: Chart.js with react-chartjs-2
 - Routing: React Router
@@ -42,7 +41,7 @@ The project follows a standard React application structure with additional folde
    ```
    npm install
    ```
-3. Set up environment variables (if any)
+3. Set up environment variables - VITE_GOOGLE_API_KEY=
 4. Start the development server:
    ```
    npm run dev
@@ -56,27 +55,6 @@ The project follows a standard React application structure with additional folde
 4. After completing the quiz, view your score and a chart of your performance.
 5. You can retry the quiz or return to the main menu.
 
-## Adding New Questions
-
-To add new questions to the database:
-
-1. Click on the "Insert Question" button on the main page.
-2. Fill out the form with the question details.
-3. Submit the form to add the question to the database.
-
-## API Endpoints
-
-The application uses the following main API endpoints:
-
-- `POST /Quiz/create`: Create a new quiz
-- `GET /Quiz/get/:id`: Get quiz questions by ID
-- `DELETE /Quiz/Finish/:id`: Delete a quiz
-- `POST /Question/addQues`: Add a new question
-
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[Add your license information here]
