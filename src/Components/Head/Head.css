@@ -1,165 +1,88 @@
 .container {
-  width: 100%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
   background: #fff;
   color: #333;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: all 0.3s ease; /* Smooth transitions */
-}
-
-.container:hover {
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15); /* Slight hover effect */
-}
-
-.container hr {
-  height: 2px;
-  border: none;
-  background: #e0e0e0;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .container h2 {
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 600;
-  color: #222; /* More contrast for heading */
-  margin-bottom: 15px;
+  color: #222;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .container ul li {
   display: flex;
   align-items: center;
-  height: 70px;
-  padding-left: 20px;
+  height: auto;
+  padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 10px;
-  margin-bottom: 20px;
-  font-size: 20px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: #f9f9f9; /* Light background for list items */
+  background: #f9f9f9;
 }
 
 .container ul li:hover {
-  background: #f1f1f1; /* Subtle hover effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); /* Shadow on hover */
+  background: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .container button {
-  margin: auto;
-  width: 250px;
-  height: 65px;
-  background: #553f9a;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 2rem auto 0;
+  height: 50px;
+  background: linear-gradient(135deg, #553f9a, #8f1a83);
   color: #fff;
-  font-size: 25px;
+  font-size: 1.2rem;
   font-weight: 600;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(85, 63, 154, 0.4); /* Add depth to button */
 }
 
 .container button:hover {
-  background: #432a7a; /* Darken button on hover */
-  box-shadow: 0 6px 15px rgba(85, 63, 154, 0.6); /* Enhance shadow on hover */
+  background: linear-gradient(135deg, #4a3685, #7a1670);
+  box-shadow: 0 6px 12px rgba(85, 63, 154, 0.3);
 }
 
-.container .index {
-  margin: auto;
-  font-size: 18px;
-  color: #555;
-}
-
-.container .correct {
-  background: #dffff2;
-  border-color: #00d397;
-  box-shadow: 0 4px 10px rgba(0, 211, 151, 0.2);
-}
-
-.container .wrong {
-  background: #ffebeb;
-  border-color: #ff4a4a;
-  box-shadow: 0 4px 10px rgba(255, 74, 74, 0.2);
-}
-
-.container .quizFlex,
-.container .quizTopics {
+.quizFlex,
+.quizTopics {
   display: flex;
-  justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
-}
-
-.container .startbutton button {
-  display: flex;
   justify-content: center;
-  width: 100%;
-  transition: all 0.5s ease;
+  gap: 20px;
 }
 
-.container .disabled {
-  opacity: 0.5;
-  pointer-events: none;
-}
-
-.container .selected {
-  border: 2px solid #007BFF;
-  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
-  transform: scale(1.05); /* Slight enlargement */
-  pointer-events: none;
-  transition: all 0.3s ease;
+.selected {
+  border: 2px solid #553f9a;
+  background: #f0ebff;
 }
 
 @media (max-width: 768px) {
   .container {
-    padding: 15px;
-    max-width: 100%;
+    padding: 1.5rem;
   }
 
   .container h2 {
-    font-size: 24px;
+    font-size: 1.75rem;
   }
 
   .container ul li {
-    height: auto;
-    padding: 12px 15px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .container button {
-    width: 100%;
-    max-width: 250px;
-    height: 50px;
-    font-size: 20px;
-  }
-
-  .container .quizFlex,
-  .container .quizTopics {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (max-width: 480px) {
-  .container {
-    padding: 10px;
-  }
-
-  .container h2 {
-    font-size: 20px;
-  }
-
-  .container ul li {
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  .container button {
-    height: 45px;
-    font-size: 18px;
+    font-size: 1.1rem;
   }
 }

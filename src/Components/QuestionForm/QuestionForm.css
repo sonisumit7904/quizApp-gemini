@@ -1,69 +1,70 @@
 .question-form {
   max-width: 600px;
   margin: auto;
-  padding: 30px 50px; /* Increased padding for a more spacious feel */
-  border: 1px solid #ddd; /* Softer border for a premium touch */
-  border-radius: 10px; /* Slightly larger radius for a smoother look */
-  background-color: #ffffff; /* Pure white background for a clean, modern look */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
-  transition: all 0.3s ease;
-}
-
-.question-form:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .question-form h2 {
   text-align: center;
-  font-size: 24px; /* Larger font size for a premium feel */
-  font-weight: 600; /* Bolder weight for a modern look */
-  color: #333; /* Softer black for text */
-  margin-bottom: 20px; /* Increased spacing below the heading */
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .question-form label {
   display: block;
-  margin-bottom: 10px; /* Increased margin for cleaner spacing */
-  font-size: 16px; /* Slightly larger text for better readability */
-  color: #333; /* Consistent color */
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 .question-form input,
 .question-form textarea,
 .question-form select {
-  color: #333; /* Neutral text color */
-  box-sizing: border-box;
-  padding: 12px; /* Increased padding for a more premium feel */
   width: 100%;
-  margin-bottom: 20px; /* Increased spacing between elements */
-  border: 1px solid #ccc;
-  border-radius: 6px; /* Larger radius for a smoother look */
-  background-color: #f7f7f7; /* Light background for input fields */
-  transition: border-color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
 .question-form input:focus,
 .question-form textarea:focus,
 .question-form select:focus {
-  border-color: #007bff; /* Blue border on focus for better UX */
-  background-color: #fff; /* White background on focus */
-  outline: none; /* Remove default outline */
+  border-color: #553f9a;
+  outline: none;
 }
 
 .question-form button {
   width: 100%;
-  padding: 12px; /* Increased padding for a premium button */
-  background-color: #007bff;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #553f9a, #8f1a83);
   color: white;
   border: none;
-  border-radius: 6px; /* Slightly larger radius */
-  font-size: 18px; /* Larger font size */
-  font-weight: 600; /* Bolder text for emphasis */
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  transition: all 0.3s ease;
 }
 
 .question-form button:hover {
-  background-color: #0056b3; /* Darker shade of blue on hover */
-  box-shadow: 0 6px 15px rgba(0, 91, 187, 0.2); /* Add subtle shadow on hover */
+  background: linear-gradient(135deg, #4a3685, #7a1670);
+  box-shadow: 0 4px 8px rgba(85, 63, 154, 0.3);
+}
+
+@media (max-width: 768px) {
+  .question-form {
+    padding: 1.5rem;
+  }
+
+  .question-form h2 {
+    font-size: 1.5rem;
+  }
 }

@@ -1,84 +1,68 @@
 .container {
-  width: 640px;
+  max-width: 800px;
   margin: auto;
-  background: #ffffff; /* Pure white for a clean look */
-  color: #262626;
-  display: flex;
-  flex-direction: column;
-  gap: 25px; /* Increased gap for more space between elements */
-  border-radius: 12px; /* Slightly larger radius for a modern touch */
-  padding: 50px; /* Uniform padding for a spacious feel */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
-  transition: box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-.container:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1); /* Slight shadow increase on hover */
-}
-
-.container hr {
-  height: 2px;
-  border: none;
-  background: #e0e0e0; /* Softer divider color */
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .container h2 {
-  font-size: 28px; /* Slightly larger font */
-  font-weight: 600; /* Bolder for emphasis */
-  color: #333; /* Softer, neutral black */
-  text-align: center; /* Centered for symmetry */
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .container ul li {
   display: flex;
   align-items: center;
-  height: 70px;
-  padding-left: 20px; /* More padding for comfort */
-  border: 1px solid #ccc; /* Softer border color */
-  border-radius: 10px; /* Larger radius for smoother edges */
-  margin-bottom: 20px;
-  font-size: 20px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
   cursor: pointer;
-  transition: all 0.3s ease; /* Smooth hover effect */
+  transition: all 0.3s ease;
 }
 
 .container ul li:hover {
-  background: #f4f4f4; /* Subtle background change on hover */
-  transform: scale(1.02); /* Slight enlargement for interactivity */
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .container button {
-  margin: auto;
-  width: 260px;
-  height: 65px;
-  background: #553f9a;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 1.5rem auto 0;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #553f9a, #8f1a83);
   color: #fff;
-  font-size: 25px;
-  font-weight: 600; /* Bolder button text */
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .container button:hover {
-  background: #452d8b; /* Darker shade on hover */
-  box-shadow: 0 6px 15px rgba(85, 63, 154, 0.3); /* Subtle shadow on hover */
+  background: linear-gradient(135deg, #4a3685, #7a1670);
+  box-shadow: 0 6px 12px rgba(85, 63, 154, 0.3);
 }
 
 .container .index {
   margin: auto;
-  font-size: 18px;
-  color: #333; /* Consistent text color */
+  font-size: 1rem;
+  color: #666;
 }
 
 .container .correct {
   background: #dffff2;
   border-color: #00d397;
-}
-
-.container .timeupCorrect {
-  background: #9be1fc;
-  border-color: #007bd3;
 }
 
 .container .wrong {
@@ -88,82 +72,67 @@
 
 .container .doughnutChart {
   height: 300px;
+  margin: 2rem 0;
 }
 
 .container .scoreboard,
 .container .nextFinish {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.container .mainMenu {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .container .title_timer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.container .mainMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 30px;
-    }
+  .container {
+    padding: 1.5rem;
+  }
 
-    .container h2 {
-        font-size: 24px;
-    }
+  .container h2 {
+    font-size: 1.5rem;
+  }
 
-    .container ul li {
-        height: auto;
-        padding: 15px;
-        font-size: 18px;
-    }
+  .container ul li {
+    font-size: 1rem;
+  }
 
-    .container button {
-        width: 100%;
-        max-width: 220px;
-        height: 55px;
-        font-size: 22px;
-    }
+  .container button {
+    font-size: 1.1rem;
+  }
 
-    .container .doughnutChart {
-        height: 250px;
-    }
+  .container .doughnutChart {
+    height: 250px;
+  }
 }
 
 @media (max-width: 480px) {
-    .container {
-        width: 95%;
-        padding: 20px;
-    }
+  .container h2 {
+    font-size: 1.25rem;
+  }
 
-    .container h2 {
-        font-size: 20px;
-    }
+  .container ul li {
+    padding: 0.75rem;
+  }
 
-    .container ul li {
-        padding: 12px;
-        font-size: 16px;
-    }
+  .container .doughnutChart {
+    height: 200px;
+  }
 
-    .container button {
-        height: 50px;
-        font-size: 20px;
-    }
-
-    .container .doughnutChart {
-        height: 200px;
-    }
-
-    .container .title_timer {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .container .title_timer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

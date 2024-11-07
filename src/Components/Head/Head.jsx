@@ -182,7 +182,7 @@ const Head = () => {
           <ImageCard
             key={index}
             isSelected={selectedCard === index}
-            isDisabled={selectedCard !== null && selectedCard !== index}
+            isDisabled={loading? true:false}
             onClick={() => clickHandlerCard(index)}
             quiz={item}
           />
@@ -193,7 +193,7 @@ const Head = () => {
           <QuizTopics
             key={index}
             isSelected={selectedTopic === index}
-            isDisabled={selectedTopic !== null && selectedTopic !== index}
+            isDisabled={loading? true:false}
             onClick={() => clickHandlerTopic(index)}
             subject={sub}
           />
