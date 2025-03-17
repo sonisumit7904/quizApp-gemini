@@ -8,7 +8,7 @@ import { useDispatch } from "react-redux";
 
 const Head = () => {
   const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
-  const api_url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0:generateContent?key=${GOOGLE_API_KEY}`;
+  const api_url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GOOGLE_API_KEY}`;
   const history = useHistory();
 
   // State to track the selected card and selected topic
